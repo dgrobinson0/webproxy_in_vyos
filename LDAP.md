@@ -43,10 +43,15 @@ sudo dpkg-reconfigure slapd
 ```
 > [!NOTE]
 > Seleccione NO cuando se le solicite omitir la configuración predeterminada de OpenLDAP.
+> 
 > Ingrese el nombre de dominio para su servidor OpenLDAP y seleccione Aceptar.
+> 
 > Ingrese el nombre de la organización y seleccione Aceptar.
+> 
 > Ingrese su contraseña de administrador para el servidor OpenLDAP y repita la contraseña.
+> 
 > Cuando se le solicite eliminar la base de datos anterior del servidor OpenLDAP, seleccione NO.
+> 
 > Para finalizar la configuración del servidor OpenLDAP, seleccione SÍ cuando se le solicite mover la antigua base de datos OpenLDAP a una nueva ubicación.
 
 Después de configurar el servidor OpenLDAP. ejecute el comando systemctl a continuación para reiniciar el servicio OpenLDAP slapd y aplicar los cambios. Luego, verifique el servicio slapd para asegurarse de que se esté ejecutando.
@@ -55,4 +60,11 @@ sudo systemctl restart slapd
 ```
 ```
 sudo systemctl status slapd
+```
+
+# Recursos
+```
+https://www.youtube.com/watch?v=3OIjXgyJlBs
+https://www.youtube.com/watch?v=yGJERaeZmKc
+https://www.youtube.com/watch?v=mL7g35tTZY8
 ```
