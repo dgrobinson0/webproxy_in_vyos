@@ -61,10 +61,23 @@ sudo systemctl restart slapd
 ```
 sudo systemctl status slapd
 ```
+```
+sudo apt install apache2 php php-cgi libapache2-mod-php php-mbstring php-common php-pear -y
 
+sudo apt -y install ldap-account-manager
+
+sudo a2enconf php*-cgi
+
+sudo systemctl restart apache2
+
+sudo systemctl enable apache2
+
+http://ip/lam
+```
 # Recursos
 ```
-https://www.youtube.com/watch?v=3OIjXgyJlBs
+https://www.youtube.com/watch?v=LzRK_8zwqxY
 https://www.youtube.com/watch?v=yGJERaeZmKc
+https://www.youtube.com/watch?v=3OIjXgyJlBs
 https://www.youtube.com/watch?v=mL7g35tTZY8
 ```
